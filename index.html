@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Hack Club Journeys - Thomas</title>
+    <meta name="title" content="Hack Club Journeys - Thomas" />
+    <meta name="description" content="Thomas's wild journeys with Hack Club" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hack Club Journeys - Thomas" />
+    <meta property="og:description" content="Thomas's wild journeys with Hack Club" />
+    <meta property="og:image" content="https://cloud-regpmmq7q-hack-club-bot.vercel.app/0journey-cover.png" />
+    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Hack Club Journeys - Thomas" />
+    <meta property="twitter:description" content="Thomas's wild journeys with Hack Club" />
+    <meta property="twitter:image" content="https://cloud-regpmmq7q-hack-club-bot.vercel.app/0journey-cover.png" />
+    
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/hc-journey/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/hc-journey/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/hc-journey/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/hc-journey/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/hc-journey/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/hc-journey/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/hc-journey/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/hc-journey/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/hc-journey/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/hc-journey/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/hc-journey/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/hc-journey/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/hc-journey/favicon-16x16.png">
+<link rel="manifest" href="/hc-journey/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/hc-journey/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function calculateAge(birthDate) {
+            const now = new Date();
+            const birth = new Date(birthDate);
+            let age = now.getFullYear() - birth.getFullYear();
+            const m = now.getMonth() - birth.getMonth();
+            if (m < 0 || (m === 0 && now.getDate() < birth.getDate())) {
+                age--;
+            }
+            const daysInYear = (now.getFullYear() % 4 === 0 && (now.getFullYear() % 100 !== 0 || now.getFullYear() % 400 === 0)) ? 366 : 365;
+            const daysLived = (now - birth) / (1000 * 60 * 60 * 24);
+            const ageDecimal = (daysLived / daysInYear).toFixed(2);
+            return ageDecimal;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const ageSpan = document.getElementById("ageSpan");
+            const birthDate = "2004-09-28";
+            ageSpan.textContent = calculateAge(birthDate);
+        });
+    </script>
+    <style>
+        @media (max-width: 768px) {
+            .audio-indicator {
+                display: none;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center;">
+    <audio id="audio-player" src="https://cloud-avau7erv7-hack-club-bot.vercel.app/0riptide-8bit_audio.mp4"></audio>
+<!-- 
+    <div class="audio-indicator" id="audio-indicator" style="position: fixed; font-size: 12px; left: 16px; bottom: 16px; color: #BC002D; border: 1px solid #BC002D; background-color: #FFF; display: flex; padding: 12px 8px;">
+        <p style="margin: 0px"><span style="background-color: #BC002D; color: #FFF; padding: 4px 6px;">Space</span> for jam</p>
+    </div> -->
+    <div style="max-width: 720px;">
+        <a href="./index.html">
+            <div class="header">
+                <h1>Japan Journey</h1>
+                <h1 id="date">2024</h1>
+            </div>
+            </a>
+        <img style="display: flex; width: 100%; margin-top: 16px" src="./assets/journey-cover.png"/>
+        <p>My Journey:</p>
+        <ul>
+            <li><a href="./arriving-in-japan.html">Arriving in Japan</a></li>
+            <li><a href="./deciding-what-to-build.html">Deciding what to build</a></li>
+            <li><a href="./late-night-coding-mvp.html">Late night coding -> "MVP"</a></li>
+            <li><a href="./daily-starbucks-mike-website.html">Daily Starbucks, Mike-san, and Kōdan Website</a></li>
+            <li><a href="./doubt-deet-to-tokyo-kodan-desktop.html">Doubt, Dieter Sabbatical, Birth of Kōdan Desktop</a></li>
+            <li><a href="./desktop-launch-analysis-convos.html">Desktop Launch, Analysis, and Convo With Mentor</a></li>
+            <li><a href="./leaving-japan.html">Leaving Japan</a></li>
+            <!-- <li><a href="./arriving-in-japan.html">Friends We Made Along The Way + Starbucks</a></li>
+            <li><a href="./arriving-in-japan.html">20 Years Old. I am old now?</a></li> -->
+        </ul>
+        <p>
+            Hey, Thomas here! I’m <span id="ageSpan"></span> years old (as of today), but as of writing this I am 19.96 years old. I spent the past 2 months in a rural Japanese village coding a project with my best friend, Dieter.
+            <br/><br/>
+            We set out with the goal to build a software project that we love and that can generate revenue such that we can survive from it. We succeeded in making something we love (<a href="https://www.kodan.app/">Kōdan.app</a> & <a href="https://serenityux.github.io/kodan-desktop-site/">Kōdan Desktop</a>), but we failed in the pursuit of making something that is useful to others such that it can generate revenue.
+            <br/><br/>
+            This page is about our journey and the many unlikely friends we made along the way, not so much the destination. It's also about the many lessons we learned from the things we did well and the things we did not so well along the journey.
+            <br/><br/>
+            As I am writing this, I'm reaching the end of my journey and the start of a new journey. I am no longer living here in a cabin in Saitama. Instead, I'll be living in a Hacker House in San Francisco. 
+            <br/><br/>
+            until next time... <span style="font-size: 14px; font-weight: 500;">bom</span> <span style="font-size: 12px; font-weight: 600;">bom</span> <span style="font-size: 8px; font-weight: 700;">bommmmmmmmmmm...</span>
+            <br/>
+            <br/>
+            ~Thomas
+        </br>
+        </p>
+    </div>
+</body>
+
+<script>
+     console.log("hmm... what are you looking for in here..")
+     console.log("it's probably not on serenidad.app") 
+     document.addEventListener('DOMContentLoaded', function() {
+            const audioPlayer = document.getElementById('audio-player');
+
+            document.addEventListener('keydown', function(event) {
+                if (event.code === 'Space') {
+                    const audioIndicator = document.getElementById('audio-indicator');
+                    audioIndicator.style.display = "none"
+                    event.preventDefault(); // Prevent default spacebar action (scrolling)
+                    if (audioPlayer.paused) {
+                        audioPlayer.play();
+                    } else {
+                        audioPlayer.pause();
+                    }
+                }
+            });
+        });
+</script>
+</html>
