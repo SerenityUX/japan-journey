@@ -142,13 +142,13 @@
 body {
     font-family: 'Fraunces';
     background-color: #FFF;
-    color: #003e0c;
+    color: #BC002D;
     cursor: url('./assets/cursor.png') 16 16, auto; /* Optional coordinates to adjust the hotspot */
 }
 
 a {
-    color: #003e0c;
-    border-bottom: 1px dotted #003e0c;
+    color: #BC002D;
+    border-bottom: 1px dotted #BC002D;
     text-decoration: none;
     cursor: pointer; /* Optional coordinates to adjust the hotspot */
 }
@@ -156,14 +156,14 @@ a {
 button {
     color: #FFF;
     border: none; padding: 4px 6px;
-    background-color: #003e0c;
-    border-bottom: 1px dotted #003e0c;
+    background-color: #BC002D;
+    border-bottom: 1px dotted #BC002D;
     text-decoration: none;
     cursor: pointer; /* Optional coordinates to adjust the hotspot */
 }
 
 ::selection {
-    background-color: #003e0c; /* Change this to your desired color */
+    background-color: #BC002D; /* Change this to your desired color */
     color: #FFF; /* Optional: Change the text color */
 }
 
